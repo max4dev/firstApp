@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="correct">"Правильно!"</string>
+    <string name="incorrect">"Не правильно!"</string>
+    <string name="yes">"Да"</string>
+    <string name="no">"Нет"</string>
+
+
+    <string name="question0">"1.  Создателем и автором сценария сериала TRUE DETECTIVE является Ник Пиццолатто?"</string>
+    <string name="question1">"2.  Мэттью Макконахи играл в 3 сезоне?"</string>
+    <string name="question2">"3.  1 сезон вышел в 2014 году?"</string>
+    <string name="question3">"4.  1 сезон сериала снимали в южной Луизиане?"</string>
+    <string name="question4">"5.  В сериале 5 сезонов?"</string>
+
+
+</resources>
