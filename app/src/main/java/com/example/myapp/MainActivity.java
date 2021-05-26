@@ -62,8 +62,9 @@ public class MainActivity extends AppCompatActivity {
                    // txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
                    // System.out.println("yesBtn - Нет" + results[questionIndex]);
                 }
-            questionIndex = (questionIndex + 1) % question.length;
-            textView.setText(question[questionIndex].getQuestionResId());
+                showResults(questionIndex);
+                questionIndex = (questionIndex + 1) % question.length;
+                textView.setText(question[questionIndex].getQuestionResId());
             }
         });
 
@@ -80,28 +81,37 @@ public class MainActivity extends AppCompatActivity {
                     results[questionIndex] = new Results(questionIndex, "Верно");
                   //  txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
                 }
-            questionIndex = (questionIndex + 1) % question.length;
-            textView.setText(question[questionIndex].getQuestionResId());
+                showResults(questionIndex);
+                questionIndex = (questionIndex + 1) % question.length;
+                textView.setText(question[questionIndex].getQuestionResId());
             }
         });
 
 
-        resBtn = findViewById(R.id.btnRes);  // Кнопка вывода результатов от ветов, на вторую (Results) активность
+        resBtn = findViewById(R.id.btnRes);  // Кнопка вывода результатов ответов, на вторую активность (Results)
         resBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Results.class);
-                intent.putExtra("answers", Results.showRes (questionIndex-1, results[questionIndex-1].getAnswer(), results));
+                if (questionIndex == 0) {
+                    intent.putExtra("answers", "Ответов на вопросы нет." + "\n" + "Ответьте пожалуйста на вопросы");
+                } else {
+                    intent.putExtra("answers", Results.showRes (questionIndex-1, results[questionIndex-1].getAnswer(), results));
+                }
                 startActivity(intent);
-
-
             }
         });
 
     }
 
-
+    private void showResults (int questionIndex) {
+        if (questionIndex == 4) {
+            Intent intent = new Intent(MainActivity.this, Results.class);
+            intent.putExtra("answers", Results.showRes(questionIndex, results[questionIndex].getAnswer(), results));
+            startActivity(intent);
+        }
+    }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {

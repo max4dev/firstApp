@@ -44,9 +44,8 @@ public class Results extends AppCompatActivity {
     //МЕТОД ВЫВОДА РЕЗУЛЬТАТОВ НА ЭКРАН
     static String showRes (int j, String s, Results array []) {
        String a = "";
-        for (int i=0; i < j+1; i++) {
-           a += "Ответ на вопрос: " + (array [i].index + 1) + " - " + array [i].answer + "\n";
-        }
+           for (int i=0; i < j+1; i++)
+           a += "Вопрос №  " + (array [i].index + 1) + " - " + array [i].answer + "\n";
         return a;
     }
 
@@ -66,8 +65,7 @@ public class Results extends AppCompatActivity {
         Backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Results.this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
     }
