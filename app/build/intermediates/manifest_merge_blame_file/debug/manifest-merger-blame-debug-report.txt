@@ -11,7 +11,7 @@
 9-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:5:5-23:19
+11-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:5:5-30:19
 12        android:allowBackup="true"
 12-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -29,30 +29,43 @@
 20        android:testOnly="true"
 21        android:theme="@style/Theme.MyApp" >
 21-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:11:9-43
-22        <activity android:name="com.example.myapp.Results" />
-22-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:9-54
-22-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:19-42
-23        <activity android:name="com.example.myapp.MainActivity" >
-23-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:9-18:20
-23-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:19-47
-24            <intent-filter>
-24-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:14:13-17:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:17-69
-25-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:17-77
-27-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:27-74
-28            </intent-filter>
-29        </activity>
-30
-31        <meta-data
-31-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:9-22:57
-32            android:name="preloaded_fonts"
-32-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:21:13-43
-33            android:resource="@array/preloaded_fonts" />
-33-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:13-54
-34    </application>
+22        <activity
+22-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:9-19:25
+23            android:name="com.example.myapp.Results"
+23-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:19-42
+24            android:parentActivityName="com.example.myapp.MainActivity" >
+24-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:13-55
+25
+26            <!-- The meta-data tag is required if you support API level 15 and lower -->
+27            <meta-data
+27-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:13-17:49
+28                android:name="android.support.PARENT_ACTIVITY"
+28-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:17-63
+29                android:value=".MainActivity" />
+29-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:17:17-46
+30            >
+31        </activity>
+32        <activity android:name="com.example.myapp.MainActivity" >
+32-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:9-25:20
+32-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:19-47
+33            <intent-filter>
+33-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:21:13-24:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:17-69
+34-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:25-66
 35
-36</manifest>
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:23:17-77
+36-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:23:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <meta-data
+40-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:27:9-29:57
+41            android:name="preloaded_fonts"
+41-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:28:13-43
+42            android:resource="@array/preloaded_fonts" />
+42-->C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:29:13-54
+43    </application>
+44
+45</manifest>

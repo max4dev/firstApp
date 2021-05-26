@@ -835,6 +835,7 @@ int id beginning 0x7f07001e
 int id blocking 0x7f07001f
 int id bottom 0x7f070020
 int id bounce 0x7f070095
+int id btnBack 0x7f0700de
 int id btnNo 0x7f0700d6
 int id btnRes 0x7f0700d9
 int id btnYes 0x7f0700d7
@@ -983,6 +984,7 @@ int id tag_unhandled_key_event_manager 0x7f070074
 int id tag_unhandled_key_listeners 0x7f070075
 int id text 0x7f070076
 int id text2 0x7f070077
+int id textAnswer 0x7f0700dd
 int id textSpacerNoButtons 0x7f070078
 int id textSpacerNoTitle 0x7f070079
 int id textView 0x7f0700d8

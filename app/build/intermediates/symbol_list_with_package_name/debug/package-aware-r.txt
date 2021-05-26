@@ -836,6 +836,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnBack
 id btnNo
 id btnRes
 id btnYes
@@ -984,6 +985,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textAnswer
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.android.support.constraint:constraint-layout:2.0.1] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\29cb2115142eabfbbe4c773adfc0097a\constraint-layout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\507866d230d6d0f86935c8fcde29738a\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\33f3d1ec144d7271b96d5ced484d88c9\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -31,25 +31,25 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\student.01012403000
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\62e5891d407cd4ef9df27905bd495354\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\faadb0893d40566a11d1cbcc0debb7c5\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\fbdfb75ba23908a4c4bf01e8a32cf6cb\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:5:5-30:19
 MERGED from [com.android.support.constraint:constraint-layout:2.0.1] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\29cb2115142eabfbbe4c773adfc0097a\constraint-layout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.1] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\29cb2115142eabfbbe4c773adfc0097a\constraint-layout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\student.0101240300052\.gradle\caches\transforms-2\files-2.1\950cafb7342b3be6b1e07c6190c89f13\support-compat-28.0.0\AndroidManifest.xml:22:5-94
@@ -71,29 +71,37 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\student.01
 	android:theme
 		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:11:9-43
 activity#com.example.myapp.Results
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:9-54
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:9-19:25
+	android:parentActivityName
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:13-55
 	android:name
 		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:12:19-42
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:13-17:49
+	android:value
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:17:17-46
+	android:name
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:17-63
 activity#com.example.myapp.MainActivity
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:9-18:20
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:9-25:20
 	android:name
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:14:13-17:29
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:23:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:20:9-22:57
+ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:27:9-29:57
 	android:resource
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:22:13-54
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:29:13-54
 	android:name
-		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:21:13-43
+		ADDED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml:28:13-43
 uses-sdk
 INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\student.0101240300052\MyApplication\MyApp\app\src\main\AndroidManifest.xml

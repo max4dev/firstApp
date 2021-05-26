@@ -1,4 +1,4 @@
-#Sat May 22 12:38:06 MSK 2021
+#Tue May 25 19:37:31 MSK 2021
 base.2=C\:\\Users\\student.0101240300052\\MyApplication\\MyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.2=1/classes.dex
 base.1=C\:\\Users\\student.0101240300052\\MyApplication\\MyApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

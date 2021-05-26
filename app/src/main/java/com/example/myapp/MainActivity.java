@@ -2,6 +2,7 @@ package com.example.myapp;
 
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button noBtn;
     private Button resBtn;
     private TextView textView;
+    private TextView txtAnsw;
     private int questionIndex = 0;
     private Question[] question = new Question [] {
         new Question(R.string.question0, true),
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         new Question(R.string.question4, false)
     };
 
-    private Results [] results = new Results[5];
+   static private Results [] results = new Results[5];
 
 
     @Override
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.textView);
         textView.setText(question [questionIndex].getQuestionResId ());
+        txtAnsw = findViewById(R.id.textAnswer);
 
         yesBtn = findViewById(R.id.btnYes);
         yesBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (question[questionIndex].isAnswerTrue()) {
                     Toast.makeText(MainActivity.this, R.string.correct, Toast.LENGTH_SHORT).show();
-                    results[questionIndex] = new Results(R.string.incorrect);
+                    results[questionIndex] = new Results(questionIndex, "Верно");
+                 //   txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
                   //  System.out.println("yesBtn - Да" + results[questionIndex].getString(R.string.correct));
                 } else {
                     Toast.makeText(MainActivity.this, R.string.incorrect, Toast.LENGTH_SHORT).show();
-                    results[questionIndex] = new Results(R.string.incorrect);
-                    System.out.println("yesBtn - Нет" + results[questionIndex]);
+                    results[questionIndex] = new Results(questionIndex, "Не верно");
+                   // txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
+                   // System.out.println("yesBtn - Нет" + results[questionIndex]);
                 }
             questionIndex = (questionIndex + 1) % question.length;
             textView.setText(question[questionIndex].getQuestionResId());
@@ -68,33 +73,50 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (question[questionIndex].isAnswerTrue()) {
                     Toast.makeText(MainActivity.this, R.string.incorrect, Toast.LENGTH_SHORT).show();
-                    results [questionIndex] = new Results (R.string.incorrect);
+                    results[questionIndex] = new Results(questionIndex, "Не верно");
+                   // txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
                 } else {
                     Toast.makeText(MainActivity.this, R.string.correct, Toast.LENGTH_SHORT).show();
-                    results [questionIndex] = new Results (R.string.correct);
+                    results[questionIndex] = new Results(questionIndex, "Верно");
+                  //  txtAnsw.setText(Results.showRes (questionIndex, results[questionIndex].getAnswer(), results));
                 }
             questionIndex = (questionIndex + 1) % question.length;
             textView.setText(question[questionIndex].getQuestionResId());
             }
         });
 
-        resBtn = findViewById(R.id.btnRes);
+
+        resBtn = findViewById(R.id.btnRes);  // Кнопка вывода результатов от ветов, на вторую (Results) активность
         resBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Results.class);
+                intent.putExtra("answers", Results.showRes (questionIndex-1, results[questionIndex-1].getAnswer(), results));
                 startActivity(intent);
+
+
             }
         });
+
     }
 
 
 
     @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState (savedInstanceState);
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState (outState);
         Log.d("КОНТРОЛЬ!!!", "onSavedInstanceState запущен");
-        savedInstanceState.putInt("questionIndex", questionIndex);
+        outState.putInt("questionIndex", questionIndex);
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d("КОНТРОЛЬ!!!", "onRestoreInstanceState запущен");
+        questionIndex = savedInstanceState.getInt("questionIndex");
+        //savedInstanceState.putInt("questionIndex", questionIndex);
     }
 
     @Override
@@ -125,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d("КОНТРОЛЬ!!!", "onStart запущен");
+
     }
 
 
